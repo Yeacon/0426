@@ -30,7 +30,12 @@ namespace Web411018531.Models
         [EmailAddress]
 
         public string Email { get; set; }
-        
+
+
+        [Required(ErrorMessage ="必要欄位")]
+        [Display(Name ="是否註冊")]
+        public bool IsActive{ get; set; }
+
 
     }
 }

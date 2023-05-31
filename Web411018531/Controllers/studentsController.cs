@@ -46,7 +46,7 @@ namespace Web411018531.Controllers
         // 如需詳細資料，請參閱 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Number,Email")] student student)
+        public ActionResult Create([Bind(Include = "Id,Name,Number,Email,IsActive")] student student)
         {
             if (ModelState.IsValid)
             {
